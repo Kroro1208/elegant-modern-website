@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import AnimRoutes from './components/AnimRoutes';
+import PagesRoutes from './components/PagesRoutes';
 import Header from './components/Header';
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Header />
-        <AnimRoutes />
+        <PagesRoutes />
       </BrowserRouter>
     </>
   );
