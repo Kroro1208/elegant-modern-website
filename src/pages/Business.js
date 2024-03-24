@@ -31,37 +31,41 @@ const Business = () => {
             <h1 className='h1'>Business</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente recusandae officiis, illo ab aut placeat quod aspernatur maxime in dolor ea dolore architecto? Nesciunt mollitia ullam voluptas sed alias recusandae!</p>
           </motion.div>
-          <div>
-            <div className='flex gap-10 auto-rows-auto min-h-[250px]' >
-              <div className='max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent'>
+          <div className=''>
+            <div className='flex flex-col mb-10 items-center md:grid md:grid-cols-2 md:justify-items-center lg:flex lg:flex-row lg:justify-between gap-10 w-full' >
+              <div className='max-w-[250px] h-[187px]'>
                 <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business1} alt="" />
               </div>
-              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent '>
+              <div className=' max-w-[250px] h-[187px]  '>
                 <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business2} alt="" />
               </div>
-              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent '>
+              <div className=' max-w-[250px] h-[187px]  '>
                 <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business3} alt="" />
               </div>
-              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent '>
+              <div className=' max-w-[250px] h-[187px]  '>
                 <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business4} alt="" />
               </div>
             </div>
-            <div className="flex gap-10">
-              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent '>
-                <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business5} alt="" />
+            <div className='flex flex-col items-center md:grid md:grid-cols-2 md:justify-items-center lg:flex lg:flex-row lg:justify-between gap-10 w-full' >
+              <div className='max-w-[250px] h-[187px]'>
+                <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business1} alt="" />
               </div>
-              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent '>
-                <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business6} alt="" />
+              <div className=' max-w-[250px] h-[187px]  '>
+                <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business2} alt="" />
               </div>
-              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent '>
-                <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business7} alt="" />
+              <div className=' max-w-[250px] h-[187px]  '>
+                <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business3} alt="" />
+              </div>
+              <div className=' max-w-[250px] h-[187px]  '>
+                <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business4} alt="" />
               </div>
             </div>
           </div>
+          <div className='pb-10'>
+            <Link to={'/contact'} className="btn mt-10 mx-auto lg:mx-0 rounded-lg hover:bg-slate-600">お仕事依頼はこちらへ</Link>
+          </div>
         </div>
-        <div className='pb-10'>
-          <Link to={'/contact'} className="btn mx-auto lg:mx-0 rounded-lg hover:bg-slate-600">お仕事依頼はこちらへ</Link>
-        </div>
+
       </div>
     </motion.section >
   );
