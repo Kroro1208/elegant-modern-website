@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from "../img/header/logo.svg";
+import Logo from "../img/header/logo.png";
 import Socials from '../components/Socials'
 import MobileNav from '../components/MobileNav'
 
