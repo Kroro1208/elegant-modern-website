@@ -1,1 +1,3 @@
-# React, Tailwind, framer motion を使用した洗練された LP
+# React, Tailwind, framer motion を使用したLP
+## デモ
+![挙動確認](README用.gif)
