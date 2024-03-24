@@ -28,7 +28,7 @@ const About = () => {
             <p className='mb-12 max-w-sm'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ipsa accusantium quidem exercitationem voluptatibus, laboriosam aliquid voluptatum nobis. Porro, inventore. Atque officia nulla delectus adipisci deserunt non incidunt et repellendus?</p>
             <br />
             <br />
-            <Link to='/business' className='btn rounded-lg'>View our works</Link>
+            <Link to='/business' className='btn rounded-lg text-sm'>View our works</Link>
           </motion.div>
         </div>
       </div>

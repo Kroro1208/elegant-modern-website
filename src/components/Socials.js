@@ -7,15 +7,15 @@ import { FaInstagram } from "react-icons/fa";
 const Socials = () => {
   return (
     <div className='hidden xl:flex ml-24'>
-      <ul>
+      <ul className='flex gap-5'>
         <li>
-          <a href="http://www.facebook.com" target='_blank'><FaFacebook /></a>
+          <a href="http://www.facebook.com" target='_blank'><FaFacebook size={24} /></a>
         </li>
         <li>
-          <a href="http://www.youtube.com" target='_blank'><IoLogoYoutube /></a>
+          <a href="http://www.youtube.com" target='_blank'><IoLogoYoutube size={24} /></a>
         </li>
         <li>
-          <a href="http://www.instagram.com" target='_blank'><FaInstagram /></a>
+          <a href="http://www.instagram.com" target='_blank'><FaInstagram size={24} /></a>
         </li>
       </ul>
     </div>

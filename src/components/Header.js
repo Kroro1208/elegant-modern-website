@@ -11,7 +11,7 @@ const Header = () => {
         <Link className='max-w-[200px]'>
           <img src={Logo} alt='' />
         </Link>
-        <nav className='hidden xl:flex gap-x-12 font-semibold'>
+        <nav className='hidden xl:flex gap-x-12 font-semibold text-xl'>
           <Link to={'/'}
             className='text-white hover:text-gray-700 transition'>
             Home
