@@ -1,36 +1,82 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Logo from "../img/header/logo.svg";
-import Socials from './Socials'
-import MobileNav from './MobileNav'
+import { AiFillBulb, AiFillFacebook, AiFillInstagram, AiFillTwitterSquare, AiFillYoutube, } from 'react-icons/ai';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
+<AiFillFacebook />
 
-const Footer = () => {
+function Footer() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm("service_mnlw8oi", "template_x4nfmrw", form.current, "r48m0uYsCIYJ_ye1q").then((result) => {
+      form.current.reset();
+      console.log(result.text);
+    }, (error) => {
+      console.log(error.text);
+    });
+  };
+
   return (
-    <div className='bg-gray-500 w-full px-[30px] lg:px-[100px] h-[100px] lg:h-[140px] flex items-center'>
-      <div className='flex flex-col lg:flex-row lg:items-center w-full justify-between'>
-        <nav className='hidden xl:flex gap-x-12 font-semibold'>
-          <Link to={'/'}
-            className='text-gray-400 hover:text-gray-700 transition'>
-            Home
-          </Link>
-          <Link to={'/about'}
-            className='text-gray-400 hover:text-gray-700 transition'>
-            about
-          </Link>
-          <Link to={'/business'}
-            className='text-gray-400 hover:text-gray-700 transition'>
-            business
-          </Link>
-          <Link to={'/contact'}
-            className='text-gray-400 hover:text-gray-700 transition'>
-            contact
-          </Link>
-        </nav>
+    <section className='w-full h-fit px-[40px] md:py-20 lg:pb-40 lg:pt-10 py-10 max-xs:px-[20] relative bg-whitesmoke' id="contact">
+      <div className='max-w-7xl mx-auto'>
+        {/* セクションタイトル */}
+        <div className='inline-block'>
+          <p className='bg-gray text-white text-sm font-medium py-3 px-5 rounded-full flex items-center gap-1 mb-10'>
+            <span>
+              <AiFillBulb />
+            </span>
+            Contact
+          </p>
+        </div>
+        {/* 左 */}
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
+          <div>
+            <p className='font-medium text-lg'>モダンなスキルを活用した開発をしています。<br />
+              また、UIUXを最大限に考慮してフロントエンドから<br />バックエンドまでフルスタックで開発させていただきます。<br />
+              <br />アプリケーション開発やWeb開発全般のご相談は気軽に問い合わせください。
+            </p>
+            <div className='mt-8'>
+              <div className='flex flex-col gap-2'>
+                <h5>My SNS accounts</h5>
+                <div className='flex gap-5'>
+                  <a href='' className='text-3xl text-orange-600'>
+                    <AiFillInstagram />
+                  </a>
+                  <a href='' className='text-3xl text-sky-300'>
+                    <AiFillTwitterSquare />
+                  </a>
+                  <a href='' className='text-3xl text-darkblue'>
+                    <AiFillFacebook />
+                  </a>
+                  <a href='' className='text-3xl text-red-600'>
+                    <AiFillYoutube />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <p className='mt-5'>連絡先はこちらになります</p>
+            <h4 className='text-lg font-medium text-darkblue'>test@example.co.jp</h4>
+            {/* SNS表示 */}
+          </div>
+          {/* 右 */}
+          <div>
+            <h2 className='py-3 '>お問い合わせフォーム</h2>
+            <form ref={form} onSubmit={sendEmail} className="w-full">
+              <input type="text" id='name' name="name" placeholder='お名前' className='w-full text-gray-700 border border-slate-300 rounded-xl py-3 px-4 mb-4 leading-tight focus:outline-cadetblue' />
+              <input type="email" id='email' name="email" placeholder='メールアドレス' className='w-full text-gray-700 border border-slate-300 rounded-xl py-3 px-4 mb-4 leading-tight focus:outline-cadetblue' />
+              <input type="text" id='subject' name="subject" placeholder='タイトル' className='w-full text-gray-700 border border-slate-300 rounded-xl py-3 px-4 mb-4 leading-tight focus:outline-cadetblue' />
+              <textarea name="message" id="message" rows={"7"} placeholder="内容" className='w-full text-gray-700 border border-slate-300 rounded-xl py-3 px-4 mb-4 leading-tight focus:outline-cadetblue' />
+              <div className='flex justify-end'>
+                <button type='submit' className='bg-darkblue text-white font-medium py-3 px-6 rounded-xl hover:shadow-xl hover:bg-gray'>送信</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-      <Socials />
-      <MobileNav />
-    </div>
-  );
-};
+    </section>
+  )
+}
 
-export default Footer;
+export default Footer

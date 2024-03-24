@@ -7,20 +7,31 @@ import business5 from '../img/business/business5.jpg'
 import business6 from '../img/business/business6.jpg'
 import business7 from '../img/business/business7.jpg'
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion'
+import { transition1 } from "../transitions"
 
 
 
 const Business = () => {
   return (
-    <section className='section'>
+    <motion.section
+      initial={{ opacity: 0, y: '100%' }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: '100%' }}
+      transition={transition1}
+      className='section'>
       <div className='container mx-auto h-full relative'>
         <div className='flex-row h-full items-center justify-start gap-x-24 text-center lg:text-left pt-24 lg:pt-36 pb-8'>
-          <div className='flex flex-col lg:items-start'>
+          <motion.div
+            initial={{ opacity: 0, y: '-80%' }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: '-80%' }}
+            transition={transition1}
+            className='flex flex-col lg:items-start mb-10'>
             <h1 className='h1'>Business</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente recusandae officiis, illo ab aut placeat quod aspernatur maxime in dolor ea dolore architecto? Nesciunt mollitia ullam voluptas sed alias recusandae!</p>
-            <Link to={'/contact'} className="btn mt-5 mb-[30px] mx-auto lg:mx-0 rounded-lg">Here me</Link>
-          </div>
-          <div className="">
+          </motion.div>
+          <div>
             <div className='flex gap-10 auto-rows-auto min-h-[250px]' >
               <div className='max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent'>
                 <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business1} alt="" />
@@ -47,17 +58,12 @@ const Business = () => {
               </div>
             </div>
           </div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quia voluptatibus dicta hic dolorem, harum assumenda accusamus doloremque nemo esse exercitationem nihil praesentium ad nostrum nam voluptas aliquid, sint maiores.</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quia voluptatibus dicta hic dolorem, harum assumenda accusamus doloremque nemo esse exercitationem nihil praesentium ad nostrum nam voluptas aliquid, sint maiores.</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quia voluptatibus dicta hic dolorem, harum assumenda accusamus doloremque nemo esse exercitationem nihil praesentium ad nostrum nam voluptas aliquid, sint maiores.</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quia voluptatibus dicta hic dolorem, harum assumenda accusamus doloremque nemo esse exercitationem nihil praesentium ad nostrum nam voluptas aliquid, sint maiores.</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quia voluptatibus dicta hic dolorem, harum assumenda accusamus doloremque nemo esse exercitationem nihil praesentium ad nostrum nam voluptas aliquid, sint maiores.</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quia voluptatibus dicta hic dolorem, harum assumenda accusamus doloremque nemo esse exercitationem nihil praesentium ad nostrum nam voluptas aliquid, sint maiores.</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quia voluptatibus dicta hic dolorem, harum assumenda accusamus doloremque nemo esse exercitationem nihil praesentium ad nostrum nam voluptas aliquid, sint maiores.</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quia voluptatibus dicta hic dolorem, harum assumenda accusamus doloremque nemo esse exercitationem nihil praesentium ad nostrum nam voluptas aliquid, sint maiores.</p>
+        </div>
+        <div className='pb-10'>
+          <Link to={'/contact'} className="btn mx-auto lg:mx-0 rounded-lg hover:bg-slate-600">お仕事依頼はこちらへ</Link>
         </div>
       </div>
-    </section >
+    </motion.section >
   );
 };
 

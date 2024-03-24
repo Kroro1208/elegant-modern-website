@@ -6,7 +6,7 @@ import MobileNav from '../components/MobileNav'
 
 const Header = () => {
   return (
-    <header className='bg-gray-500 opacity-80 fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center'>
+    <header className='bg-gray-500 opacity-80 fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[120px] flex items-center'>
       <div className='flex flex-col lg:flex-row lg:items-center w-full justify-between'>
         <Link className='max-w-[200px]'>
           <img src={Logo} alt='' />
