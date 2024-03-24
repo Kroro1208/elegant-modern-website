@@ -20,33 +20,41 @@ const Business = () => {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente recusandae officiis, illo ab aut placeat quod aspernatur maxime in dolor ea dolore architecto? Nesciunt mollitia ullam voluptas sed alias recusandae!</p>
             <Link to={'/contact'} className="btn mt-5 mb-[30px] mx-auto lg:mx-0 rounded-lg">Here me</Link>
           </div>
-          <div className="lg:gap-2">
-            <div className='grid grid-cols-4 gap-2' >
-              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-                <img className='rounded-xl object-cover h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business1} alt="" />
+          <div className="">
+            <div className='flex gap-10 auto-rows-auto min-h-[250px]' >
+              <div className='max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent'>
+                <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business1} alt="" />
               </div>
-              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-                <img className='rounded-xl object-cover h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business2} alt="" />
+              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent '>
+                <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business2} alt="" />
               </div>
-              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-                <img className='rounded-xl object-cover h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business3} alt="" />
+              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent '>
+                <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business3} alt="" />
               </div>
-              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-                <img className='rounded-xl object-cover h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business4} alt="" />
+              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent '>
+                <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business4} alt="" />
               </div>
             </div>
-            <div className="grid grid-cols-3 pl-20 mt-2">
-              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-                <img className='rounded-xl object-cover h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business5} alt="" />
+            <div className="flex gap-10">
+              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent '>
+                <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business5} alt="" />
               </div>
-              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-                <img className='rounded-xl object-cover h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business6} alt="" />
+              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent '>
+                <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business6} alt="" />
               </div>
-              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-                <img className='rounded-xl object-cover h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business7} alt="" />
+              <div className=' max-w-[250px] lg:max-[320px] h-[187px] lg:h-[220px] bg-accent '>
+                <img className='rounded-xl  h-full lg:h-[200px] hover:scale-110 transition-all duration-500' src={business7} alt="" />
               </div>
             </div>
           </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quia voluptatibus dicta hic dolorem, harum assumenda accusamus doloremque nemo esse exercitationem nihil praesentium ad nostrum nam voluptas aliquid, sint maiores.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quia voluptatibus dicta hic dolorem, harum assumenda accusamus doloremque nemo esse exercitationem nihil praesentium ad nostrum nam voluptas aliquid, sint maiores.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quia voluptatibus dicta hic dolorem, harum assumenda accusamus doloremque nemo esse exercitationem nihil praesentium ad nostrum nam voluptas aliquid, sint maiores.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quia voluptatibus dicta hic dolorem, harum assumenda accusamus doloremque nemo esse exercitationem nihil praesentium ad nostrum nam voluptas aliquid, sint maiores.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quia voluptatibus dicta hic dolorem, harum assumenda accusamus doloremque nemo esse exercitationem nihil praesentium ad nostrum nam voluptas aliquid, sint maiores.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quia voluptatibus dicta hic dolorem, harum assumenda accusamus doloremque nemo esse exercitationem nihil praesentium ad nostrum nam voluptas aliquid, sint maiores.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quia voluptatibus dicta hic dolorem, harum assumenda accusamus doloremque nemo esse exercitationem nihil praesentium ad nostrum nam voluptas aliquid, sint maiores.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quia voluptatibus dicta hic dolorem, harum assumenda accusamus doloremque nemo esse exercitationem nihil praesentium ad nostrum nam voluptas aliquid, sint maiores.</p>
         </div>
       </div>
     </section >
